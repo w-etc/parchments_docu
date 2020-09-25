@@ -22,3 +22,27 @@ La persona dispone de un formulario en el que puede introducir su nombre y su co
 ### • Una persona puede registrarse
 
 La persona dispone de un formulario en el que puede introducir su nombre, una contraseña y una confirmación. La aplicación valida la disponibilidad de este nombre y, en caso de estar libre y que las contraseñas coincidan, crea una cuenta para esta persona.
+
+## Diagrama de arquitectura
+
+![diagrama_arquitectura](Diagrama%20de%20Arquitectura.png)
+
+- parchment_page.dart
+
+Este es el componente que se comunica con el servicio HTTP para que le consiga el Parchment y después muestra el detalle a la persona
+
+- http_service.dart
+
+Es la clase que se encarga de manejar las requests HTTP
+
+- ParchmentController.java
+
+El controlador Spring que escucha las requests HTTP y delega en el servicio para conseguir las respuestas
+
+- ParchmentService.java
+
+El componente que comunica el repositorio con el controlador. A veces realiza operaciones en el medio
+
+- ParchmentRepository.java
+
+El repositorio que se comunica con la base de datos Neo4j y le retorna al servicio los pedidos solicitados
