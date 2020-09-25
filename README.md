@@ -46,3 +46,7 @@ El componente que comunica el repositorio con el controlador. A veces realiza op
 - ParchmentRepository.java
 
 El repositorio que se comunica con la base de datos Neo4j y le retorna al servicio los pedidos solicitados
+
+## Diagrama Entidad-Relación
+
+![diagrama_entidad_relacion](Diagrama%20Entidad%20Relacion.png)
