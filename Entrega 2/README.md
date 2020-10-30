@@ -7,13 +7,21 @@ Parchments es una aplicación que permite a un grupo de usuaries escribir una hi
 
 ![casos_de_uso](Diagrama%20Casos%20de%20Uso.png)
 
-### • Una persona puede leer continuaciones del Parchment principal
+### • Una persona puede buscar Parchments
 
-Al llegar al final de un Parchment, la persona dispone de un botón que puede tocar para seguir leyendo. La aplicación entonces carga las continuaciones de primer nivel del último Parchment leído.
+La pantalla principal incluye una barra de búsqueda en la que una persona puede buscar un Parchment por su título y accederlo directamente, sin importar si este Parchment es núcleo o una continuación.
 
-### • Una persona puede escribir continuaciones a partir de otros Parchments
+### • Una persona puede solicitar un Parchment al azar
 
-Al llegar al final de un Parchment, la persona dispone de un botón que puede tocar para escribir una continuación. La aplicación entonces carga una pantalla de escritura. Cuando la persona finaliza, este Parchment se guarda y se enlaza como continuación del Parchment anterior.
+Una persona puede presionar un botón el cual le muestra inmediatamente un Parchment núcleo al azar para comenzar a leer.
+
+### • Una persona puede leer Parchments
+
+La pantalla principal de la aplicación ofrece todos los Parchments núcleo, de los cuales surgen múltiples continuaciones. Una persona puede leer todos estos Parchments; y al llegar al final de un Parchment, la persona dispone de un botón que puede tocar para seguir leyendo. La aplicación entonces carga las continuaciones de primer nivel del último Parchment leído.
+
+### • Una persona puede escribir Parchments
+
+Una persona puede acceder a una pantalla de creación que le permite escribir un Parchment núcleo, a partir del cual pueden surgir múltiples continuaciones. También, al llegar al final de un Parchment, la persona dispone de un botón que puede tocar para escribir una continuación. La aplicación entonces carga una pantalla de escritura. Cuando la persona finaliza, este Parchment se guarda y se enlaza como continuación del Parchment anterior.
 
 ### • Una persona puede iniciar sesión
 
