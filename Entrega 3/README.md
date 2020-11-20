@@ -11,17 +11,36 @@ Parchments es una aplicación que permite a un grupo de usuaries escribir una hi
 
 La pantalla principal incluye una barra de búsqueda en la que una persona puede buscar un Parchment por su título y accederlo directamente, sin importar si este Parchment es núcleo o una continuación.
 
+Esta búsqueda ahora es "fuzzy", lo que significa que una persona puede obtener sugerencias de acuerdo a su término de búsqueda.
+
 ### • Una persona puede solicitar un Parchment al azar
 
 Una persona puede presionar un botón el cual le muestra inmediatamente un Parchment núcleo al azar para comenzar a leer.
+
+Se mejoró la accesibilidad a esta opción: ahora puede accederse desde el botón de la barra de navegación inferior o desde el drawer lateral en Parchment Detail o en Continuations.
 
 ### • Una persona puede leer Parchments
 
 La pantalla principal de la aplicación ofrece todos los Parchments núcleo, de los cuales surgen múltiples continuaciones. Una persona puede leer todos estos Parchments; y al llegar al final de un Parchment, la persona dispone de un botón que puede tocar para seguir leyendo. La aplicación entonces carga las continuaciones de primer nivel del último Parchment leído.
 
+Cada uno de estos Parchments presenta breadcrumbs: el camino desde el Parchment núcleo hasta el Parchment que se está leyendo actualmente. Esto permite que la persona fácilmente vuelva hacia un Parchment leido anteriormente.
+
+Los Parchments ahora también tienen una sinopsis, la cual apunta a resumir la trama en pocas oraciones. Esta sinopsis puede accederse manteniendo apretada una Parchment Card tanto en Home como en el menú de Continuations.
+
+Como último detalle, tanto la Home como la pantalla de Continuations ahora es paginada; es decir, solo se trae un cierto número de Parchments cuando la persona entra a esta pantalla por primera vez, y a medida que va scrolleando se traen los Parchments subsecuentes.
+
 ### • Una persona puede escribir Parchments
 
 Una persona puede acceder a una pantalla de creación que le permite escribir un Parchment núcleo, a partir del cual pueden surgir múltiples continuaciones. También, al llegar al final de un Parchment, la persona dispone de un botón que puede tocar para escribir una continuación. La aplicación entonces carga una pantalla de escritura. Cuando la persona finaliza, este Parchment se guarda y se enlaza como continuación del Parchment anterior.
+
+Ahora se puede escribir la sinopsis de un Parchment en esta pantalla.
+
+Además, se agregaron las siguientes validaciones:
+
+- El título tiene una limitación de 50 caracteres
+- No se puede crear un Parchment con alguno de los tres campos (título, sinopsis, contenido) vacío.
+
+Se agregó también un cartel de confirmación que se muestra a la persona si intenta abandonar la pantalla de creación luego de haber empezado a escribir.
 
 ### • Una persona puede iniciar sesión
 
